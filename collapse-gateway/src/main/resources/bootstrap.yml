@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: gateway
+  profiles:
+    # 开发环境
+    active: dev
+  cloud:
+    nacos:
+      # nacos 地址
+      server-addr: 127.0.0.1:8848
+      # 服务配置
+      config:
+        #后缀名
+        file-extension: yaml
+        # 命名空间id
+        namespace: 16304a51-58de-4dc8-b88f-c90cced20cd9
+      discovery:
+        # nacos 地址
+        server-addr: 127.0.0.1:8848
+        # 集群名称
+        cluster-name: NJ
+        # 命名空间id
+        namespace: 16304a51-58de-4dc8-b88f-c90cced20cd9
+        username: nacos
+        password: nacos
